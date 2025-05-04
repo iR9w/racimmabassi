@@ -100,32 +100,6 @@
       border-radius: 10px;
     }
 
-    .contact {
-      background-color: #f9f9f9;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .contact input,
-    .contact textarea {
-      width: 80%;
-      max-width: 400px;
-      padding: 12px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      text-align: right;
-    }
-
-    .contact button {
-      background-color: #fffc00;
-      padding: 12px 20px;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-
     footer {
       background-color: #eee;
       text-align: center;
@@ -155,7 +129,6 @@
     <a href="#overview">نظرة عامة</a>
     <a href="#features">الميزات</a>
     <a href="#visit">الموقع الرسمي</a>
-    <a href="#contact">اتصل بنا</a>
   </nav>
 
   <section id="overview">
@@ -181,17 +154,6 @@
     <h2>زيارة الموقع الرسمي لسناب شات</h2>
     <p>هل ترغب في معرفة المزيد أو تحميل التطبيق؟</p>
     <a href="https://www.snapchat.com" target="_blank" class="button">زيارة Snapchat.com</a>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>اتصل بنا</h2>
-    <p>هل لديك ملاحظات أو استفسارات؟ يسعدنا سماعك.</p>
-    <form>
-      <input type="text" placeholder="اسمك" required><br>
-      <input type="email" placeholder="بريدك الإلكتروني" required><br>
-      <textarea placeholder="رسالتك" rows="4" required></textarea><br>
-      <button type="submit">إرسال</button>
-    </form>
   </section>
 
   <footer>

@@ -21,6 +21,7 @@
       background-color: var(--snap-gray);
       color: #222;
       line-height: 1.8;
+      overflow-x: hidden;
     }
 
     header {
@@ -34,46 +35,50 @@
     header img {
       width: 90px;
       margin-bottom: 10px;
-      animation: bounce 1s infinite;
+      animation: bounce 1.5s infinite;
     }
 
     header h1 {
       margin: 0;
-      font-size: 30px;
+      font-size: 34px;
       font-weight: 600;
       color: var(--snap-black);
     }
 
     header p {
       margin: 5px 0 0;
-      font-size: 16px;
+      font-size: 18px;
       color: #333;
+      opacity: 0;
+      animation: fadeInName 1.5s forwards;
+      animation-delay: 1s;
     }
 
     .typing {
-      font-size: 28px;
+      font-size: 30px;
       color: var(--highlight-color);
       font-weight: 600;
       display: inline-block;
       white-space: nowrap;
-      border-right: 4px solid var(--highlight-color);
-      padding-right: 5px;
-      animation: typing 3s steps(20) 1s forwards, blink 0.75s step-end infinite;
+      opacity: 0;
+      animation: fadeInName 1.5s forwards, typing 3s steps(20) 1s forwards, blink 0.75s step-end infinite;
+      animation-delay: 1.5s;
     }
 
     nav {
       display: flex;
       justify-content: center;
       background-color: var(--snap-black);
-      animation: fadeIn 1.5s ease-in;
+      animation: fadeIn 2s ease-in;
     }
 
     nav a {
-      padding: 15px 25px;
+      padding: 15px 30px;
       color: var(--snap-yellow);
       text-decoration: none;
       font-weight: 600;
       transition: background 0.3s;
+      text-transform: uppercase;
     }
 
     nav a:hover {
@@ -90,8 +95,8 @@
       margin-bottom: 60px;
       background-color: white;
       border-radius: 10px;
-      padding: 25px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+      padding: 30px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
       opacity: 0;
       animation: fadeInSection 1s forwards;
     }
@@ -102,7 +107,7 @@
 
     h2 {
       color: var(--highlight-color);
-      font-size: 24px;
+      font-size: 26px;
       margin-bottom: 15px;
     }
 
@@ -119,7 +124,7 @@
     a.button {
       display: inline-block;
       margin-top: 15px;
-      padding: 10px 25px;
+      padding: 12px 30px;
       background-color: var(--snap-yellow);
       color: var(--snap-black);
       text-decoration: none;
@@ -137,18 +142,26 @@
       background-color: var(--snap-black);
       color: var(--snap-yellow);
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       font-size: 14px;
       animation: fadeIn 2s ease-in;
     }
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 24px;
+        font-size: 28px;
       }
 
       nav a {
-        padding: 10px;
+        padding: 12px;
+        font-size: 16px;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      a.button {
         font-size: 14px;
       }
     }
@@ -163,12 +176,21 @@
       }
     }
 
+    @keyframes fadeInName {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
     @keyframes bounce {
       0%, 100% {
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
       }
     }
 
@@ -181,18 +203,6 @@
       }
     }
 
-    @keyframes popUp {
-      0% {
-        transform: scale(0);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    /* Typing effect */
     @keyframes typing {
       from {
         width: 0;
@@ -206,6 +216,17 @@
     @keyframes blink {
       50% {
         border-color: transparent;
+      }
+    }
+
+    @keyframes popUp {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
       }
     }
 

@@ -1,1 +1,202 @@
-# racimmabassi
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>معلومات عن سناب شات</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #fffc00;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #000;
+    }
+
+    nav {
+      background-color: #ffe600;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    section p,
+    ul {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #fffc00;
+      color: #000;
+      border: 2px solid #000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #fff000;
+      transform: scale(1.05);
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .image-container img {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .contact {
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 80%;
+      max-width: 400px;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      text-align: right;
+    }
+
+    .contact button {
+      background-color: #fffc00;
+      padding: 12px 20px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><i class="fa-brands fa-snapchat-ghost"></i> مرحبًا بكم في معلومات سناب شات</h1>
+  </header>
+
+  <nav>
+    <a href="#overview">نظرة عامة</a>
+    <a href="#features">الميزات</a>
+    <a href="#visit">الموقع الرسمي</a>
+    <a href="#contact">اتصل بنا</a>
+  </nav>
+
+  <section id="overview">
+    <h2>ما هو سناب شات؟</h2>
+    <p>سناب شات هو تطبيق للرسائل المتعددة الوسائط تم تطويره من قبل شركة Snap Inc. يسمح للمستخدمين بإرسال الصور ومقاطع الفيديو والرسائل التي تختفي بعد مشاهدتها. تم إطلاق التطبيق عام 2011 وأصبح من أكثر التطبيقات شهرة بين الشباب حول العالم.</p>
+    <div class="image-container">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/ad/Snapchat_logo.svg" alt="شعار سناب شات">
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>الميزات الرئيسية</h2>
+    <ul>
+      <li>📸 صور ورسائل تختفي بعد العرض</li>
+      <li>👻 التكامل مع Bitmoji</li>
+      <li>🎭 فلاتر وتأثيرات الواقع المعزز</li>
+      <li>🗺️ خريطة سناب لرؤية مواقع الأصدقاء</li>
+      <li>📖 استكشاف القصص والأخبار</li>
+    </ul>
+  </section>
+
+  <section id="visit">
+    <h2>زيارة الموقع الرسمي لسناب شات</h2>
+    <p>هل ترغب في معرفة المزيد أو تحميل التطبيق؟</p>
+    <a href="https://www.snapchat.com" target="_blank" class="button">زيارة Snapchat.com</a>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>اتصل بنا</h2>
+    <p>هل لديك ملاحظات أو استفسارات؟ يسعدنا سماعك.</p>
+    <form>
+      <input type="text" placeholder="اسمك" required><br>
+      <input type="email" placeholder="بريدك الإلكتروني" required><br>
+      <textarea placeholder="رسالتك" rows="4" required></textarea><br>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 صفحة معلومات غير رسمية عن سناب شات | تم الإنشاء بحب 💛 | غير تابع رسميًا لـ Snap Inc.
+  </footer>
+
+</body>
+</html>

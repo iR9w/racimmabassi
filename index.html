@@ -50,6 +50,17 @@
       color: #333;
     }
 
+    .typing {
+      font-size: 28px;
+      color: var(--highlight-color);
+      font-weight: 600;
+      display: inline-block;
+      white-space: nowrap;
+      border-right: 4px solid var(--highlight-color);
+      padding-right: 5px;
+      animation: typing 3s steps(20) 1s forwards, blink 0.75s step-end infinite;
+    }
+
     nav {
       display: flex;
       justify-content: center;
@@ -180,6 +191,24 @@
         opacity: 1;
       }
     }
+
+    /* Typing effect */
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    /* Blinking cursor */
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -187,7 +216,7 @@
   <header>
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/512px-Snapchat_logo.svg.png" alt="شعار سناب شات">
     <h1>سناب شات - معلومات وميزات 🌟</h1>
-    <p>مقدم من: <strong>racim abassi 👨‍💻</strong></p>
+    <p>مقدم من: <span class="typing">racim abassi 👨‍💻</span></p>
   </header>
 
   <nav>
